@@ -1,0 +1,277 @@
+{
+  "base": {
+    "proxy.url": "https://api-test.mtsbank.ru",
+    "url": "http://services-ump2-test.mbrd.ru"
+  },
+  "clickhouse": {
+    "db": {
+      "host": "eab-chdb-test1.mbrd.ru",
+      "name": "TEST",
+      "password": "tst@chtest1",
+      "port": "8123",
+      "username": "tstuser"
+    }
+  },
+  "daily.banking": {
+    "java.port": "8080",
+    "port": "8080"
+  },
+  "dbo": {
+    "java.port": "8080",
+    "port": "8090",
+    "reference.book": {
+      "db": {
+        "host": "pg-ump-test.mbrd.ru",
+        "name": "dbo-reference-book",
+        "password": ".2Kj&6z-Ec",
+        "port": "6432",
+        "username": "dbophys_owner"
+      }
+    }
+  },
+  "kafka": {
+    "bootstrap-servers": "vm-kafka-ump01tn.mbrd.ru:9092,vm-kafka-ump02tn.mbrd.ru:9092,vm-kafka-ump03tn.mbrd.ru:9092",
+    "dbo": {
+      "password": "7vLODINZ",
+      "username": "dbo"
+    },
+    "password": "xuqhcI3a",
+    "username": "serviceplatform"
+  },
+  "mq.gateway": {
+    "port": "8090",
+    "url": "http://mq-gateway-info.integration.ump-test.mbrd.ru"
+  },
+  "ncpk": {
+    "bank.clients": {
+      "dbo.loan.issue": {
+        "db": {
+          "host": "pg-ump-test.mbrd.ru",
+          "name": "dbo-loan-issue",
+          "password": "]G8JNc,3gQ",
+          "port": "6432",
+          "username": "dbo-loan-issue"
+        }
+      }
+    },
+    "customer.agreement": {
+      "db": {
+        "host": "vm-ncpk-pgsql-test.mbrd.ru",
+        "name": "customer_agreement_db",
+        "password": "re&Uw3SG:g",
+        "port": "7432",
+        "username": "customer_agreement_app"
+      }
+    },
+    "java.port": "8080",
+    "n2b": {
+      "credit.holiday": {
+        "db": {
+          "host": "vm-db-ump01t.mbrd.ru",
+          "name": "credit_holiday_db",
+          "password": "kFLv#lw41TWx",
+          "port": "6432",
+          "username": "credit_holiday_app"
+        }
+      },
+      "client.identification": {
+        "db": {
+          "host": "vm-db-ump01t.mbrd.ru",
+          "name": "client_identification_db",
+          "password": "3UIApVPZhAyOLVgy",
+          "port": "6432",
+          "username": "client_identification_app"
+        }
+      }
+    },
+    "port": "8090",
+    "product.support": {
+      "calc.main": {
+        "db": {
+          "host": "pg-ump-test.mbrd.ru",
+          "name": "calc_main_db",
+          "password": "hFsV60lTZ9x9",
+          "port": "6432",
+          "username": "calc_main_app"
+        }
+      },
+      "dbo.credit.service": {
+        "db": {
+          "host": "pg-ump-test.mbrd.ru",
+          "name": "credit_service_db",
+          "password": "dWIQ382!@_kk",
+          "port": "6432",
+          "username": "credit_service_adm"
+        }
+      },
+      "dbo.early.repayment": {
+        "db": {
+          "host": "pg-ump-test.mbrd.ru",
+          "name": "dbo-early-repayment",
+          "password": "4TSjFruoXk",
+          "port": "6432",
+          "username": "dbo-early-repayment"
+        },
+        "otpToken": "eyJ0eXBlIjoiZWFybHlyZXBheW1lbnQiLCJyYm9JZCI6NzA5NjA5MTIxMjR9",
+        "rboId": "70960912124"
+      }
+    }
+  },
+  "pos.credits": {
+    "dbo.early.repayment": {
+      "db": {
+        "host": "pg-ump-test.mbrd.ru",
+        "name": "dbo-early-repayment",
+        "password": "4TSjFruoXk",
+        "port": "6432",
+        "username": "dbo-early-repayment"
+      }
+    },
+    "port": "8080"
+  },
+  "product.domains": {
+    "card": {
+      "grpc": {
+        "host": "card-grpc.card-domain.ump-test.mbrd.ru",
+        "port": "8091",
+        "system.cert": "-----BEGIN CERTIFICATE-----\nMIIImjCCB4KgAwIBAgITUwAAB5O0BIJZmitvNAACAAAHkzANBgkqhkiG9w0BAQ0F\nADBqMRwwGgYJKoZIhvcNAQkBFg1jYUBtdHNiYW5rLnJ1MQswCQYDVQQGEwJSVTEP\nMA0GA1UEBxMGTW9zY293MRYwFAYDVQQKEw1PSlNDIE1UUyBCYW5rMRQwEgYDVQQD\nEwtNVFMgQmFuayBDQTAeFw0yMTExMTUwNzM1NTVaFw0yMzExMTUwNzQ1NTVaMIG0\nMQswCQYDVQQGEwJSVTEPMA0GA1UECBMGTW9zY293MQ8wDQYDVQQHEwZNb3Njb3cx\nFjAUBgNVBAoTDVBKU0MgTVRTIEJhbmsxDDAKBgNVBAsTA1VNUDE2MDQGA1UEAxMt\nVU1QIENlcnQgTWFuYWdlciBHZW5lcmF0ZWQgU2VydmVyIENlcnRpZmljYXRlMSUw\nIwYJKoZIhvcNAQkBFhZVTVBfcHJvamVjdEBtdHNiYW5rLnJ1MIIEFjANBgkqhkiG\n9w0BAQEFAAOCBAMAMIID/gKCA/UA2I6VtnKPSi2SM0vDfFY7BL91y6OjPwRF2PFY\nO7OkNAMcpvplq3BY2w0K11FZjIHIGKr7NOQXnuEIGUm484FGrOofHPnaB7y+Fo+o\nFlYLLmit8qDOJKaDG7rvvUzr4gSGDIlnq4J8013LUjJ4R49tufY4f0KJMwu3IP6e\nLn4mjmrQS8NORs5ne0NKM3mXYFMBKBzzCmlsw/tIN1p7gv3gwGbaFCxn5FRZcD7o\nF24GnacyAR5AOoqxdOl663b0hNQ5OgmCfPuWRT8BkJQqEKwvVaoeiOozd+m5nHhG\nm109Sc7/26wpd2dXRnP5QTAaEld1qccu+MH4B94Dk5zSxgtdOifodeSuNxhWP/Ci\njRiNUh9ieSxTeWZwBoeLIb/JAHrT26xj00lCyhFYucQv7ZlxXUZ4vcGUApdWAa32\n7ZK/Ki9sgMuXAJiYVa/i/pFNMAxDuZpO/WC0065BTDHr6vE67IwxEC5lkLbrt2Fk\nR5wS1n/0Zhj9ix9SqHAYJwPC7Rtn/fumJLP+2iDOokIZcXN+OcgNq0lUVUCmT0Dp\nvdO8TFS09aiz0GWAIeSwxjj/kQXJtIU5imNq7h8W9SKLxSH2bpmNOn3ESqt8daMu\ny5Aaz8zjpkkUPrRmoRu9eiNRT8Q5NPZsoA93SoNmWSHCk5DfOVqAQfyZtlBJNQlV\nEuuBtfrU38PhvTDkVORAt+is7o8g3vV0wRAOH3txY7SCbdCR17mB3ihr9kTENWWz\nc1Hss03mYF4CVzaeN27NP09LIWrTaNA8EDIbSFIE1/R5OWIZGrqsIDOinGzC/vbZ\nmSdnhyHXrw9MhCBDtqgspwVLBwkABB3ew6aT/AMHPJv40v69Ijh8vZd66kdbkmZv\nm+kwb9QWYU1kwkzAIJ5OCpKVxuDx4Crcr4HEeWncLEvrv5h/RSF3IpK62uEEONLo\nBFJWwaNyL7CpD7nUKn3fjaHTZtUH/U3A4ZjVfv4oo+hqB0fUFyry3igPF1V6QI1o\nd5tY7p7yATvipHKCTD48msNhJ95/zvIqBliZo5zE1B7T1Z5R3d7xpvUfdAjzq+R7\nMmo4INEr5YrU5I+MUSoGMhZEkBZZujan+6RJCZdtY+1+18qiefEhJszxPB2Ofwmw\n3dAHNR2owI6Qg6EG4NaL26VV0ot0E2sH1Ng9VtMJHx1n5ba/+wJtiRO1J+Fg/ZmI\ne6jvNZznjxvObYFCELSv6aiCq0suzMIYSUohf74I3bNPlzZ3j8EKM0huVn2TWRLB\n/iAZ+ECjujDsS747rxoTSOH0LY9tSPhPYoSKnAavNb/cQz3mq9uRmcAwSOSmAndj\nmGxMJYCYijPYIZnas+Tjav6aiOeISgp6jQIDAQABo4IB+DCCAfQwEwYDVR0lBAww\nCgYIKwYBBQUHAwEwHQYDVR0OBBYEFCa27GoDIahEkqDaor63R0qDexq7MBIGA1Ud\nEwEB/wQIMAYBAf8CAQEwCwYDVR0PBAQDAgHmMIGRBgNVHR4EgYkwgYaggYMwEoIQ\nLnVtcC1kZXYubWJyZC5ydTATghEudW1wLXRlc3QubWJyZC5ydTASghAudW1wLXVh\ndC5tYnJkLnJ1MBOCES51bXAtbG9hZC5tYnJkLnJ1MBaCFC51bXAtcHJlcHJvZC5t\nYnJkLnJ1MBeCFS51bXAtcHNzLXRlc3QubWJyZC5ydTAfBgNVHSMEGDAWgBQYtuCM\nIG0XaqEsSLK208/4UaSM6jCBhQYDVR0fBH4wfDB6oHigdoY5aHR0cDovL1VDLVNl\nY29uZC5tYnJkLnJ1L1VDLVNlY29uZC9NVFMlMjBCYW5rJTIwQ0EoMikuY3Jshjlo\ndHRwOi8vVUMtU2Vjb25kLm1icmQucnUvVUMtU2Vjb25kL01UUyUyMEJhbmslMjBD\nQSgyKS5jcmwwYAYIKwYBBQUHAQEEVDBSMFAGCCsGAQUFBzAChkRodHRwOi8vdWMt\nc2Vjb25kLm1icmQucnUvQ2VydEVucm9sbC9VQy1TZWNvbmRfTVRTJTIwQmFuayUy\nMENBKDIpLmNydDANBgkqhkiG9w0BAQ0FAAOCAQEAlG1/pwg5G33eT4tfaac7oDvn\n6idrbPfJr1NLucCvHOvVd6v7BBrpKIo/DfwmwDT4Q997tUsE1N9Ajfk1YBZauyTe\nyFW/dPFwru3F0b3Usx9/QLezuH0CTSaRt2Fh6Vh0gr+vXWUWXmUF/HCDf3QQIVUh\nJqlRCWOJ0dmwd4a4518HypVaNOyMnWhNL7Lv2kSFgL3Y81lWn3bNEuOOgRK8TgvT\nqlKFlRVLrUJHaBfuA1D2di0S5cjB+8V7Rkrn/nT2OmCWRzFy7hw6OgFvoga5JsgW\n/aA/+zEFpqROgkfMMpr4MhKMSZssRxl3kcTIxbh5N+tiJ2x32LL2QuCLyIgFPw==-----END CERTIFICATE-----"
+      }
+    },
+    "customer": {
+      "db": {
+        "host": "pg-ump-test.mbrd.ru",
+        "name": "customer",
+        "password": "9EwJieS6YpukfaTu",
+        "port": "6432",
+        "username": "product_domain"
+      }
+    },
+    "deposit": {
+      "db": {
+        "host": "pg-ump-test.mbrd.ru",
+        "name": "deposit",
+        "password": "9EwJieS6YpukfaTu",
+        "port": "6432",
+        "username": "product_domain"
+      },
+      "grpc": {
+        "host": "deposit-grpc.deposit-domain.ump-test.mbrd.ru",
+        "port": "8091",
+        "system.cert": "-----BEGIN CERTIFICATE-----\nMIIImjCCB4KgAwIBAgITUwAAB5O0BIJZmitvNAACAAAHkzANBgkqhkiG9w0BAQ0F\nADBqMRwwGgYJKoZIhvcNAQkBFg1jYUBtdHNiYW5rLnJ1MQswCQYDVQQGEwJSVTEP\nMA0GA1UEBxMGTW9zY293MRYwFAYDVQQKEw1PSlNDIE1UUyBCYW5rMRQwEgYDVQQD\nEwtNVFMgQmFuayBDQTAeFw0yMTExMTUwNzM1NTVaFw0yMzExMTUwNzQ1NTVaMIG0\nMQswCQYDVQQGEwJSVTEPMA0GA1UECBMGTW9zY293MQ8wDQYDVQQHEwZNb3Njb3cx\nFjAUBgNVBAoTDVBKU0MgTVRTIEJhbmsxDDAKBgNVBAsTA1VNUDE2MDQGA1UEAxMt\nVU1QIENlcnQgTWFuYWdlciBHZW5lcmF0ZWQgU2VydmVyIENlcnRpZmljYXRlMSUw\nIwYJKoZIhvcNAQkBFhZVTVBfcHJvamVjdEBtdHNiYW5rLnJ1MIIEFjANBgkqhkiG\n9w0BAQEFAAOCBAMAMIID/gKCA/UA2I6VtnKPSi2SM0vDfFY7BL91y6OjPwRF2PFY\nO7OkNAMcpvplq3BY2w0K11FZjIHIGKr7NOQXnuEIGUm484FGrOofHPnaB7y+Fo+o\nFlYLLmit8qDOJKaDG7rvvUzr4gSGDIlnq4J8013LUjJ4R49tufY4f0KJMwu3IP6e\nLn4mjmrQS8NORs5ne0NKM3mXYFMBKBzzCmlsw/tIN1p7gv3gwGbaFCxn5FRZcD7o\nF24GnacyAR5AOoqxdOl663b0hNQ5OgmCfPuWRT8BkJQqEKwvVaoeiOozd+m5nHhG\nm109Sc7/26wpd2dXRnP5QTAaEld1qccu+MH4B94Dk5zSxgtdOifodeSuNxhWP/Ci\njRiNUh9ieSxTeWZwBoeLIb/JAHrT26xj00lCyhFYucQv7ZlxXUZ4vcGUApdWAa32\n7ZK/Ki9sgMuXAJiYVa/i/pFNMAxDuZpO/WC0065BTDHr6vE67IwxEC5lkLbrt2Fk\nR5wS1n/0Zhj9ix9SqHAYJwPC7Rtn/fumJLP+2iDOokIZcXN+OcgNq0lUVUCmT0Dp\nvdO8TFS09aiz0GWAIeSwxjj/kQXJtIU5imNq7h8W9SKLxSH2bpmNOn3ESqt8daMu\ny5Aaz8zjpkkUPrRmoRu9eiNRT8Q5NPZsoA93SoNmWSHCk5DfOVqAQfyZtlBJNQlV\nEuuBtfrU38PhvTDkVORAt+is7o8g3vV0wRAOH3txY7SCbdCR17mB3ihr9kTENWWz\nc1Hss03mYF4CVzaeN27NP09LIWrTaNA8EDIbSFIE1/R5OWIZGrqsIDOinGzC/vbZ\nmSdnhyHXrw9MhCBDtqgspwVLBwkABB3ew6aT/AMHPJv40v69Ijh8vZd66kdbkmZv\nm+kwb9QWYU1kwkzAIJ5OCpKVxuDx4Crcr4HEeWncLEvrv5h/RSF3IpK62uEEONLo\nBFJWwaNyL7CpD7nUKn3fjaHTZtUH/U3A4ZjVfv4oo+hqB0fUFyry3igPF1V6QI1o\nd5tY7p7yATvipHKCTD48msNhJ95/zvIqBliZo5zE1B7T1Z5R3d7xpvUfdAjzq+R7\nMmo4INEr5YrU5I+MUSoGMhZEkBZZujan+6RJCZdtY+1+18qiefEhJszxPB2Ofwmw\n3dAHNR2owI6Qg6EG4NaL26VV0ot0E2sH1Ng9VtMJHx1n5ba/+wJtiRO1J+Fg/ZmI\ne6jvNZznjxvObYFCELSv6aiCq0suzMIYSUohf74I3bNPlzZ3j8EKM0huVn2TWRLB\n/iAZ+ECjujDsS747rxoTSOH0LY9tSPhPYoSKnAavNb/cQz3mq9uRmcAwSOSmAndj\nmGxMJYCYijPYIZnas+Tjav6aiOeISgp6jQIDAQABo4IB+DCCAfQwEwYDVR0lBAww\nCgYIKwYBBQUHAwEwHQYDVR0OBBYEFCa27GoDIahEkqDaor63R0qDexq7MBIGA1Ud\nEwEB/wQIMAYBAf8CAQEwCwYDVR0PBAQDAgHmMIGRBgNVHR4EgYkwgYaggYMwEoIQ\nLnVtcC1kZXYubWJyZC5ydTATghEudW1wLXRlc3QubWJyZC5ydTASghAudW1wLXVh\ndC5tYnJkLnJ1MBOCES51bXAtbG9hZC5tYnJkLnJ1MBaCFC51bXAtcHJlcHJvZC5t\nYnJkLnJ1MBeCFS51bXAtcHNzLXRlc3QubWJyZC5ydTAfBgNVHSMEGDAWgBQYtuCM\nIG0XaqEsSLK208/4UaSM6jCBhQYDVR0fBH4wfDB6oHigdoY5aHR0cDovL1VDLVNl\nY29uZC5tYnJkLnJ1L1VDLVNlY29uZC9NVFMlMjBCYW5rJTIwQ0EoMikuY3Jshjlo\ndHRwOi8vVUMtU2Vjb25kLm1icmQucnUvVUMtU2Vjb25kL01UUyUyMEJhbmslMjBD\nQSgyKS5jcmwwYAYIKwYBBQUHAQEEVDBSMFAGCCsGAQUFBzAChkRodHRwOi8vdWMt\nc2Vjb25kLm1icmQucnUvQ2VydEVucm9sbC9VQy1TZWNvbmRfTVRTJTIwQmFuayUy\nMENBKDIpLmNydDANBgkqhkiG9w0BAQ0FAAOCAQEAlG1/pwg5G33eT4tfaac7oDvn\n6idrbPfJr1NLucCvHOvVd6v7BBrpKIo/DfwmwDT4Q997tUsE1N9Ajfk1YBZauyTe\nyFW/dPFwru3F0b3Usx9/QLezuH0CTSaRt2Fh6Vh0gr+vXWUWXmUF/HCDf3QQIVUh\nJqlRCWOJ0dmwd4a4518HypVaNOyMnWhNL7Lv2kSFgL3Y81lWn3bNEuOOgRK8TgvT\nqlKFlRVLrUJHaBfuA1D2di0S5cjB+8V7Rkrn/nT2OmCWRzFy7hw6OgFvoga5JsgW\n/aA/+zEFpqROgkfMMpr4MhKMSZssRxl3kcTIxbh5N+tiJ2x32LL2QuCLyIgFPw==\n-----END CERTIFICATE-----\n"
+      }
+    },
+    "loanind": {
+      "db": {
+        "host": "pg-ump-test.mbrd.ru",
+        "name": "loanind",
+        "password": "9EwJieS6YpukfaTu",
+        "port": "6432",
+        "username": "product_domain"
+      },
+      "grpc": {
+        "host": "loanind-grpc.loanind-domain.ump-test.mbrd.ru",
+        "port": "8091",
+        "system.cert": "-----BEGIN CERTIFICATE-----\nMIIImjCCB4KgAwIBAgITUwAAB5O0BIJZmitvNAACAAAHkzANBgkqhkiG9w0BAQ0F\nADBqMRwwGgYJKoZIhvcNAQkBFg1jYUBtdHNiYW5rLnJ1MQswCQYDVQQGEwJSVTEP\nMA0GA1UEBxMGTW9zY293MRYwFAYDVQQKEw1PSlNDIE1UUyBCYW5rMRQwEgYDVQQD\nEwtNVFMgQmFuayBDQTAeFw0yMTExMTUwNzM1NTVaFw0yMzExMTUwNzQ1NTVaMIG0\nMQswCQYDVQQGEwJSVTEPMA0GA1UECBMGTW9zY293MQ8wDQYDVQQHEwZNb3Njb3cx\nFjAUBgNVBAoTDVBKU0MgTVRTIEJhbmsxDDAKBgNVBAsTA1VNUDE2MDQGA1UEAxMt\nVU1QIENlcnQgTWFuYWdlciBHZW5lcmF0ZWQgU2VydmVyIENlcnRpZmljYXRlMSUw\nIwYJKoZIhvcNAQkBFhZVTVBfcHJvamVjdEBtdHNiYW5rLnJ1MIIEFjANBgkqhkiG\n9w0BAQEFAAOCBAMAMIID/gKCA/UA2I6VtnKPSi2SM0vDfFY7BL91y6OjPwRF2PFY\nO7OkNAMcpvplq3BY2w0K11FZjIHIGKr7NOQXnuEIGUm484FGrOofHPnaB7y+Fo+o\nFlYLLmit8qDOJKaDG7rvvUzr4gSGDIlnq4J8013LUjJ4R49tufY4f0KJMwu3IP6e\nLn4mjmrQS8NORs5ne0NKM3mXYFMBKBzzCmlsw/tIN1p7gv3gwGbaFCxn5FRZcD7o\nF24GnacyAR5AOoqxdOl663b0hNQ5OgmCfPuWRT8BkJQqEKwvVaoeiOozd+m5nHhG\nm109Sc7/26wpd2dXRnP5QTAaEld1qccu+MH4B94Dk5zSxgtdOifodeSuNxhWP/Ci\njRiNUh9ieSxTeWZwBoeLIb/JAHrT26xj00lCyhFYucQv7ZlxXUZ4vcGUApdWAa32\n7ZK/Ki9sgMuXAJiYVa/i/pFNMAxDuZpO/WC0065BTDHr6vE67IwxEC5lkLbrt2Fk\nR5wS1n/0Zhj9ix9SqHAYJwPC7Rtn/fumJLP+2iDOokIZcXN+OcgNq0lUVUCmT0Dp\nvdO8TFS09aiz0GWAIeSwxjj/kQXJtIU5imNq7h8W9SKLxSH2bpmNOn3ESqt8daMu\ny5Aaz8zjpkkUPrRmoRu9eiNRT8Q5NPZsoA93SoNmWSHCk5DfOVqAQfyZtlBJNQlV\nEuuBtfrU38PhvTDkVORAt+is7o8g3vV0wRAOH3txY7SCbdCR17mB3ihr9kTENWWz\nc1Hss03mYF4CVzaeN27NP09LIWrTaNA8EDIbSFIE1/R5OWIZGrqsIDOinGzC/vbZ\nmSdnhyHXrw9MhCBDtqgspwVLBwkABB3ew6aT/AMHPJv40v69Ijh8vZd66kdbkmZv\nm+kwb9QWYU1kwkzAIJ5OCpKVxuDx4Crcr4HEeWncLEvrv5h/RSF3IpK62uEEONLo\nBFJWwaNyL7CpD7nUKn3fjaHTZtUH/U3A4ZjVfv4oo+hqB0fUFyry3igPF1V6QI1o\nd5tY7p7yATvipHKCTD48msNhJ95/zvIqBliZo5zE1B7T1Z5R3d7xpvUfdAjzq+R7\nMmo4INEr5YrU5I+MUSoGMhZEkBZZujan+6RJCZdtY+1+18qiefEhJszxPB2Ofwmw\n3dAHNR2owI6Qg6EG4NaL26VV0ot0E2sH1Ng9VtMJHx1n5ba/+wJtiRO1J+Fg/ZmI\ne6jvNZznjxvObYFCELSv6aiCq0suzMIYSUohf74I3bNPlzZ3j8EKM0huVn2TWRLB\n/iAZ+ECjujDsS747rxoTSOH0LY9tSPhPYoSKnAavNb/cQz3mq9uRmcAwSOSmAndj\nmGxMJYCYijPYIZnas+Tjav6aiOeISgp6jQIDAQABo4IB+DCCAfQwEwYDVR0lBAww\nCgYIKwYBBQUHAwEwHQYDVR0OBBYEFCa27GoDIahEkqDaor63R0qDexq7MBIGA1Ud\nEwEB/wQIMAYBAf8CAQEwCwYDVR0PBAQDAgHmMIGRBgNVHR4EgYkwgYaggYMwEoIQ\nLnVtcC1kZXYubWJyZC5ydTATghEudW1wLXRlc3QubWJyZC5ydTASghAudW1wLXVh\ndC5tYnJkLnJ1MBOCES51bXAtbG9hZC5tYnJkLnJ1MBaCFC51bXAtcHJlcHJvZC5t\nYnJkLnJ1MBeCFS51bXAtcHNzLXRlc3QubWJyZC5ydTAfBgNVHSMEGDAWgBQYtuCM\nIG0XaqEsSLK208/4UaSM6jCBhQYDVR0fBH4wfDB6oHigdoY5aHR0cDovL1VDLVNl\nY29uZC5tYnJkLnJ1L1VDLVNlY29uZC9NVFMlMjBCYW5rJTIwQ0EoMikuY3Jshjlo\ndHRwOi8vVUMtU2Vjb25kLm1icmQucnUvVUMtU2Vjb25kL01UUyUyMEJhbmslMjBD\nQSgyKS5jcmwwYAYIKwYBBQUHAQEEVDBSMFAGCCsGAQUFBzAChkRodHRwOi8vdWMt\nc2Vjb25kLm1icmQucnUvQ2VydEVucm9sbC9VQy1TZWNvbmRfTVRTJTIwQmFuayUy\nMENBKDIpLmNydDANBgkqhkiG9w0BAQ0FAAOCAQEAlG1/pwg5G33eT4tfaac7oDvn\n6idrbPfJr1NLucCvHOvVd6v7BBrpKIo/DfwmwDT4Q997tUsE1N9Ajfk1YBZauyTe\nyFW/dPFwru3F0b3Usx9/QLezuH0CTSaRt2Fh6Vh0gr+vXWUWXmUF/HCDf3QQIVUh\nJqlRCWOJ0dmwd4a4518HypVaNOyMnWhNL7Lv2kSFgL3Y81lWn3bNEuOOgRK8TgvT\nqlKFlRVLrUJHaBfuA1D2di0S5cjB+8V7Rkrn/nT2OmCWRzFy7hw6OgFvoga5JsgW\n/aA/+zEFpqROgkfMMpr4MhKMSZssRxl3kcTIxbh5N+tiJ2x32LL2QuCLyIgFPw==\n-----END CERTIFICATE-----\n"
+      }
+    }
+  },
+  "product.services": {
+    "mts.money": {
+      "product.display.settings": {
+        "db": {
+          "host": "pg-ump-test.mbrd.ru",
+          "name": "sp_ev_settings_db",
+          "password": "2o6MrA260pk4W",
+          "port": "6432",
+          "username": "sp_ev_settings_app"
+        },
+        "grpc": {
+          "host": "product-display-settings-grpc.mtsmoney.ump-test.mbrd.ru",
+          "port": "8091",
+          "system.cert": "-----BEGIN CERTIFICATE-----\nMIIImjCCB4KgAwIBAgITUwAAB5O0BIJZmitvNAACAAAHkzANBgkqhkiG9w0BAQ0F\nADBqMRwwGgYJKoZIhvcNAQkBFg1jYUBtdHNiYW5rLnJ1MQswCQYDVQQGEwJSVTEP\nMA0GA1UEBxMGTW9zY293MRYwFAYDVQQKEw1PSlNDIE1UUyBCYW5rMRQwEgYDVQQD\nEwtNVFMgQmFuayBDQTAeFw0yMTExMTUwNzM1NTVaFw0yMzExMTUwNzQ1NTVaMIG0\nMQswCQYDVQQGEwJSVTEPMA0GA1UECBMGTW9zY293MQ8wDQYDVQQHEwZNb3Njb3cx\nFjAUBgNVBAoTDVBKU0MgTVRTIEJhbmsxDDAKBgNVBAsTA1VNUDE2MDQGA1UEAxMt\nVU1QIENlcnQgTWFuYWdlciBHZW5lcmF0ZWQgU2VydmVyIENlcnRpZmljYXRlMSUw\nIwYJKoZIhvcNAQkBFhZVTVBfcHJvamVjdEBtdHNiYW5rLnJ1MIIEFjANBgkqhkiG\n9w0BAQEFAAOCBAMAMIID/gKCA/UA2I6VtnKPSi2SM0vDfFY7BL91y6OjPwRF2PFY\nO7OkNAMcpvplq3BY2w0K11FZjIHIGKr7NOQXnuEIGUm484FGrOofHPnaB7y+Fo+o\nFlYLLmit8qDOJKaDG7rvvUzr4gSGDIlnq4J8013LUjJ4R49tufY4f0KJMwu3IP6e\nLn4mjmrQS8NORs5ne0NKM3mXYFMBKBzzCmlsw/tIN1p7gv3gwGbaFCxn5FRZcD7o\nF24GnacyAR5AOoqxdOl663b0hNQ5OgmCfPuWRT8BkJQqEKwvVaoeiOozd+m5nHhG\nm109Sc7/26wpd2dXRnP5QTAaEld1qccu+MH4B94Dk5zSxgtdOifodeSuNxhWP/Ci\njRiNUh9ieSxTeWZwBoeLIb/JAHrT26xj00lCyhFYucQv7ZlxXUZ4vcGUApdWAa32\n7ZK/Ki9sgMuXAJiYVa/i/pFNMAxDuZpO/WC0065BTDHr6vE67IwxEC5lkLbrt2Fk\nR5wS1n/0Zhj9ix9SqHAYJwPC7Rtn/fumJLP+2iDOokIZcXN+OcgNq0lUVUCmT0Dp\nvdO8TFS09aiz0GWAIeSwxjj/kQXJtIU5imNq7h8W9SKLxSH2bpmNOn3ESqt8daMu\ny5Aaz8zjpkkUPrRmoRu9eiNRT8Q5NPZsoA93SoNmWSHCk5DfOVqAQfyZtlBJNQlV\nEuuBtfrU38PhvTDkVORAt+is7o8g3vV0wRAOH3txY7SCbdCR17mB3ihr9kTENWWz\nc1Hss03mYF4CVzaeN27NP09LIWrTaNA8EDIbSFIE1/R5OWIZGrqsIDOinGzC/vbZ\nmSdnhyHXrw9MhCBDtqgspwVLBwkABB3ew6aT/AMHPJv40v69Ijh8vZd66kdbkmZv\nm+kwb9QWYU1kwkzAIJ5OCpKVxuDx4Crcr4HEeWncLEvrv5h/RSF3IpK62uEEONLo\nBFJWwaNyL7CpD7nUKn3fjaHTZtUH/U3A4ZjVfv4oo+hqB0fUFyry3igPF1V6QI1o\nd5tY7p7yATvipHKCTD48msNhJ95/zvIqBliZo5zE1B7T1Z5R3d7xpvUfdAjzq+R7\nMmo4INEr5YrU5I+MUSoGMhZEkBZZujan+6RJCZdtY+1+18qiefEhJszxPB2Ofwmw\n3dAHNR2owI6Qg6EG4NaL26VV0ot0E2sH1Ng9VtMJHx1n5ba/+wJtiRO1J+Fg/ZmI\ne6jvNZznjxvObYFCELSv6aiCq0suzMIYSUohf74I3bNPlzZ3j8EKM0huVn2TWRLB\n/iAZ+ECjujDsS747rxoTSOH0LY9tSPhPYoSKnAavNb/cQz3mq9uRmcAwSOSmAndj\nmGxMJYCYijPYIZnas+Tjav6aiOeISgp6jQIDAQABo4IB+DCCAfQwEwYDVR0lBAww\nCgYIKwYBBQUHAwEwHQYDVR0OBBYEFCa27GoDIahEkqDaor63R0qDexq7MBIGA1Ud\nEwEB/wQIMAYBAf8CAQEwCwYDVR0PBAQDAgHmMIGRBgNVHR4EgYkwgYaggYMwEoIQ\nLnVtcC1kZXYubWJyZC5ydTATghEudW1wLXRlc3QubWJyZC5ydTASghAudW1wLXVh\ndC5tYnJkLnJ1MBOCES51bXAtbG9hZC5tYnJkLnJ1MBaCFC51bXAtcHJlcHJvZC5t\nYnJkLnJ1MBeCFS51bXAtcHNzLXRlc3QubWJyZC5ydTAfBgNVHSMEGDAWgBQYtuCM\nIG0XaqEsSLK208/4UaSM6jCBhQYDVR0fBH4wfDB6oHigdoY5aHR0cDovL1VDLVNl\nY29uZC5tYnJkLnJ1L1VDLVNlY29uZC9NVFMlMjBCYW5rJTIwQ0EoMikuY3Jshjlo\ndHRwOi8vVUMtU2Vjb25kLm1icmQucnUvVUMtU2Vjb25kL01UUyUyMEJhbmslMjBD\nQSgyKS5jcmwwYAYIKwYBBQUHAQEEVDBSMFAGCCsGAQUFBzAChkRodHRwOi8vdWMt\nc2Vjb25kLm1icmQucnUvQ2VydEVucm9sbC9VQy1TZWNvbmRfTVRTJTIwQmFuayUy\nMENBKDIpLmNydDANBgkqhkiG9w0BAQ0FAAOCAQEAlG1/pwg5G33eT4tfaac7oDvn\n6idrbPfJr1NLucCvHOvVd6v7BBrpKIo/DfwmwDT4Q997tUsE1N9Ajfk1YBZauyTe\nyFW/dPFwru3F0b3Usx9/QLezuH0CTSaRt2Fh6Vh0gr+vXWUWXmUF/HCDf3QQIVUh\nJqlRCWOJ0dmwd4a4518HypVaNOyMnWhNL7Lv2kSFgL3Y81lWn3bNEuOOgRK8TgvT\nqlKFlRVLrUJHaBfuA1D2di0S5cjB+8V7Rkrn/nT2OmCWRzFy7hw6OgFvoga5JsgW\n/aA/+zEFpqROgkfMMpr4MhKMSZssRxl3kcTIxbh5N+tiJ2x32LL2QuCLyIgFPw==\n-----END CERTIFICATE-----\n"
+        },
+        "port": "8090"
+      }
+    }
+  },
+  "product.catalog.service": {
+    "db": {
+      "host": "pg-ump-test.mbrd.ru",
+      "name": "product_catalog_service_db",
+      "password": "-catalog-adm",
+      "port": "6432",
+      "username": "product_catalog_service_adm"
+    }
+  },
+  "rbo": {
+    "db": {
+      "host": "rbomts.mbrd.ru",
+      "name": "rbomts",
+      "password": "nop83#Dtnop83#Dt",
+      "port": "1522",
+      "username": "IBS"
+    }
+  },
+  "sales": {
+    "dbo.personal.offers": {
+      "db": {
+        "host": "pg-ump-test.mbrd.ru",
+        "name": "dbo_personal_offers_db",
+        "password": "wrNi_=mGq6ar",
+        "port": "6432",
+        "username": "dbo_personal_offers_app"
+      }
+    },
+    "offer.hub": {
+      "db": {
+        "host": "offer-db-test.mbrd.ru",
+        "name": "sp_offer_hub_db",
+        "password": "ahTeNei2Dphae6ieK",
+        "port": "5432",
+        "username": "sp_offer_hub_app"
+      }
+    }
+  },
+  "siebel": {
+    "db": {
+      "host": "sbldb-psi-d01-lv.mbrd.ru",
+      "name": "sbl",
+      "password": "QAZwsx1234#",
+      "port": "1521",
+      "username": "autotest2"
+    },
+    "db_old": {
+      "host": "siebel-psi-db.mbrd.ru",
+      "name": "psisblnew",
+      "password": "New2PS1!New2PS1!",
+      "port": "1521",
+      "username": "Siebel"
+    }
+  },
+  "sso" : {
+    "db": {
+      "host": "pg-ump-test.mbrd.ru",
+      "name": "sso",
+      "password": "R5w7omtcIao=",
+      "port": "6432",
+      "username": "sso"
+    }
+  },
+  "system": {
+    "grpc.cert": "-----BEGIN CERTIFICATE-----\nMIIGFTCCA/2gAwIBAgIUJTLdLdADpqTQDHdPgbI1xdadTAwwDQYJKoZIhvcNAQEL\nBQAwgZkxCzAJBgNVBAYTAlJVMQ8wDQYDVQQIDAZNb3Njb3cxDzANBgNVBAcMBk1v\nc2NvdzEWMBQGA1UECgwNUEpTQyBNVFMgQmFuazEMMAoGA1UECwwDVU1QMRswGQYD\nVQQDDBIqLnVtcC10ZXN0Lm1icmQucnUxJTAjBgkqhkiG9w0BCQEWFlVNUF9wcm9q\nZWN0QG10c2JhbmsucnUwHhcNMjAwMzI1MTIxMDAyWhcNMzAwMzIzMTIxMDAyWjCB\nmTELMAkGA1UEBhMCUlUxDzANBgNVBAgMBk1vc2NvdzEPMA0GA1UEBwwGTW9zY293\nMRYwFAYDVQQKDA1QSlNDIE1UUyBCYW5rMQwwCgYDVQQLDANVTVAxGzAZBgNVBAMM\nEioudW1wLXRlc3QubWJyZC5ydTElMCMGCSqGSIb3DQEJARYWVU1QX3Byb2plY3RA\nbXRzYmFuay5ydTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAKuxFyFG\nYbHFyKIxpiSjO3uIxgGAVCZqVJlR3gKTHndLbwcQBTcleRbFEpwwj3jJXpihIISs\nB+BZ8xkAu2eJ1utCvE5BLOKa0y6jRLqugv9kJM5uvg5ZoxVgiymidRyQW3KzbnFt\nO+wEdfWMaOqEIPo+835c7PFIv2KCQfNxhVUrFK272fUDqbMOX5qRdjezc9mulbYj\nhJ4KC1scqKS2LQnGgOGTq57PojkcQvSjnfbpF+zgM4fMBHJdDbZsV3iDZKxcbOtG\nh6xLCaO1SgXCws/yAWiX+/9HpMm8HYdD5Z8Tjr+1Lg3p8FbO3/vphWSY9C0H13Sy\nx4WFCcUBqm+H7cOUIttxTXxU9rIXJ7pay2yi4JHHtY1D3bjx9DthpMIVMygpDRTg\nNrwdPueCbVfztShJtXwvtLzkw0+9gIOCnjTKtw4/iJYwxSIDwuGfaYTQmmfMNXsa\nB1yQPo1l5ngmQBNJLft/EYRp0lHJbrapGS6s5796cQaBkWycOoVZt7u59f90+p2Q\nyEvbnhEnPOP4pSMTMPfbUHvH3d2UAqM4ZdtVV/k6VTCGWr/Ixebs/3vlfjn0ir2g\n9kpS6FwY3xxtz8JUwVv6VuJhgWAsQId+ATCO4fa0wG36cX2thPGSkhd4cVHyO0sk\n7us5oOno548zr6FTYNu9gvENd8aggesKX6cFAgMBAAGjUzBRMB0GA1UdDgQWBBSY\njsuv54G+mQZeyP5kUDIETehJTTAfBgNVHSMEGDAWgBSYjsuv54G+mQZeyP5kUDIE\nTehJTTAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4ICAQA6oOVC1oVg\nPySHCLYwupF5Dph38npl+IYMkcwgPR6QisvfS5e0s5ZBjLKvI14SlHbC6Z67nXsc\nEgJfyzjYNaOaJ87OrX8wRQQgkMfdzlO5qe6yrHKihSnVnlxcw/8CaTpD3yGwGx9e\nkxj7QAzUgbmKb+aNFa74K/rBiXOUB3SAqr9Rwdh4Pi9FDBH4+vG5v/AFEmVx9ge+\nKZn38UT1Rosu4tf+R9pW0pu2pQGTKk9ScMioUuNXH2svrA4iGyRm4Al6SDq4s4LM\nhS7rfuiQt8fRRvbQ+hsdEFfpcB7oXFpwDAsu398qduXDyQOTFhyxQdPvGmuEUmN6\nUWm00SLDzC807MiBUgmQKnzZOR3LqHZIrVID+qfKQ5VwMdMlSwDHSQLXoJvp5h1D\nf4NWrpOuNZ0aJecjycNgM/E5BqfuhRwHbeC43RMtVjHSvahSga5osCF+o6Qh+X+a\nfFxSReg75M91lK/w+rxDYIiH8fk7W8x2Fl4TbOQsoNRvIMiNFzgDCCqCLhVcIwgF\nF2ZmQ3HR/Obc6ce/uBogyQ4WF3NKmEwjq4tqUSwmhxyXkFD8gsiuLo+64IuAuhWe\nOOil9D6myJsYa95FqLWEMEOeAwRuUa203jhMFem21mO3Qev3lpP8qa7RuaoJZD3G\nNnZumycB+CCxVWzIrO3bEncF96SfVQIr9w==\n-----END CERTIFICATE-----",
+    "qa.api": {
+      "client.id": "test_desktop_v2",
+      "f2a": "1234",
+      "phone": "79102339261",
+      "port": "8090",
+      "rbo.id": "84519702820",
+      "secret.key": "YELLOW SUBMARINE, GREEN WIZARDRY",
+      "url": "http://loadgen14.mbrd.ru/qaapi",
+      "xor.key": "mts-bank-platform"
+    },
+    "test.data.kafka": "src/main/resources/test-data/kafka"
+  },
+  "site2.auth": {
+    "port": 8090
+  }
+}
