@@ -29,7 +29,7 @@
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter</artifactId>
-                <version>5.8.1</version>
+                <version>5.9.2</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
@@ -63,7 +63,7 @@
             <dependency>
                 <artifactId>jaxb-core</artifactId>
                 <groupId>com.sun.xml.bind</groupId>
-                <version>4.0.1</version>
+                <version>4.0.2</version>
             </dependency>
             <dependency>
                 <artifactId>jaxb-api</artifactId>
@@ -81,6 +81,28 @@
                 <version>2.2</version>
                 <scope>test</scope>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>6.2.1.Final</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.xml.bind</groupId>
+                <artifactId>jakarta.xml.bind-api</artifactId>
+                <version>4.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish.jaxb</groupId>
+                <artifactId>jaxb-runtime</artifactId>
+                <version>4.0.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.javassist</groupId>
+                <artifactId>javassist</artifactId>
+                <version>3.27.0-GA</version>
+            </dependency>
         </dependencies>
-        <description>Demo project for Spring Boot</description>
+        <description>Demo project for Hibernate</description>
     </project>
