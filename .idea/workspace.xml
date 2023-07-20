@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22d102f-e060-4eab-bde0-bc536a8f11f7" name="Changes" comment="add entity &#10;add hibernate.cfg.xml">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/dbconfig/DBConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/AuthorBookDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/AuthorDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/BookDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/CreateAuthorRq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/CreateAuthorRs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/CreateBookRq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/CreateBookRs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/GetAllAuthorBooksRq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/GetAllAuthorBooksRs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/ListBooks.java" afterDir="false" />
+    <list default="true" id="c22d102f-e060-4eab-bde0-bc536a8f11f7" name="Changes" comment="add models&#10;small fixes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/AuthorSaveSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689087832566</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add models&#10;small fixes">
+      <option name="closed" value="true" />
+      <created>1689835957997</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689835957997</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,7 +151,8 @@
     <MESSAGE value="add new repo" />
     <MESSAGE value="pom fixed" />
     <MESSAGE value="add entity &#10;add hibernate.cfg.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add entity &#10;add hibernate.cfg.xml" />
+    <MESSAGE value="add models&#10;small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="add models&#10;small fixes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
