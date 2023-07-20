@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22d102f-e060-4eab-bde0-bc536a8f11f7" name="Changes" comment="pom fixed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/entity/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/entity/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/entity/Customer.java" afterDir="false" />
+    <list default="true" id="c22d102f-e060-4eab-bde0-bc536a8f11f7" name="Changes" comment="add entity &#10;add hibernate.cfg.xml">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/dbconfig/DBConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/AuthorBookDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/AuthorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/BookDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/CreateAuthorRq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/CreateAuthorRs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/CreateBookRq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/CreateBookRs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/GetAllAuthorBooksRq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/GetAllAuthorBooksRs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/ListBooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +47,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2RsUsI7XpLiE3vteXNB5lORbZrz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -47,21 +55,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/DMerzlyakov/IdeaProjects/demo/demo",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.22070312",
-    "project.structure.side.proportion": "0.2724138",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dmerzlyakov/Desktop/IdeaProjects/aqa_final_work&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.22070312&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2724138&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <module name="aqa_final" />
@@ -115,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689062975736</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add entity &#10;add hibernate.cfg.xml">
+      <option name="closed" value="true" />
+      <created>1689087832566</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689087832566</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,7 +154,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add new repo" />
     <MESSAGE value="pom fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom fixed" />
+    <MESSAGE value="add entity &#10;add hibernate.cfg.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add entity &#10;add hibernate.cfg.xml" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

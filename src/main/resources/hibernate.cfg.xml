@@ -10,6 +10,9 @@
         <property name="hibernate.format_sql">true</property>
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="hbm2ddl.auto">update</property>
+        <mapping class="ru.library.entity.Author" />
+        <mapping class="ru.library.entity.Book" />
+        <mapping class="ru.library.entity.Customer" />
 
     </session-factory>
 </hibernate-configuration>
