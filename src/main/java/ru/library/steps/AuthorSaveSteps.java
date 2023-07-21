@@ -2,18 +2,15 @@ package ru.library.steps;
 
 import io.qameta.allure.Step;
 import io.restassured.http.ContentType;
-import ru.library.models.CreateAuthorRq;
-import ru.library.models.CreateAuthorRs;
-
-import java.lang.reflect.Type;
+import ru.library.models.postgresql.request.AuthorSaveRq;
+import ru.library.models.postgresql.response.AuthorSaveRs;
 
 import static io.restassured.RestAssured.given;
-
 
 public class AuthorSaveSteps {
 
     @Step("Запрос POST http://localhost:8080/library/authors/save Получаем ID сохраненного автора")
-    public CreateAuthorRs createAuthorRs(CreateAuthorRq request, int expectedStatus) { //метод ответа на запрос -метод-(-запрос-, -ожидаемый статус код-)
+    public AuthorSaveRs createAuthorRs(AuthorSaveRq request, int expectedStatus) { //метод ответа на запрос -метод-(-запрос-, -ожидаемый статус код-)
         return given() //что было передано в запросе
                 .contentType(ContentType.JSON) //формат данных JSON
                 .body(request) //body для запроса с методом POST
