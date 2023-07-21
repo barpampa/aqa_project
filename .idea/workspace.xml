@@ -4,30 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22d102f-e060-4eab-bde0-bc536a8f11f7" name="Changes" comment="add one step">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/request/AllAuthorBooksRq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/request/AuthorIdDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/request/AuthorSaveRq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/AllAuthorBooksRs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/AuthorDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/AuthorSaveRs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/BookSaveRs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/LibraryAuthorBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="c22d102f-e060-4eab-bde0-bc536a8f11f7" name="Changes" comment="add fixes models/steps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/AuthorBookDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/AuthorDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/BookDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/CreateAuthorRq.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/CreateAuthorRs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/CreateBookRq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/request/BookSaveRq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/CreateBookRs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/GetAllAuthorBooksRq.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/GetAllAuthorBooksRs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/ListBooks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/steps/AuthorSaveSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/AuthorSaveSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/steps/AuthorSaveSteps.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689862837173</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add fixes models/steps">
+      <option name="closed" value="true" />
+      <created>1689946398208</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689946398208</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,7 +168,8 @@
     <MESSAGE value="add entity &#10;add hibernate.cfg.xml" />
     <MESSAGE value="add models&#10;small fixes" />
     <MESSAGE value="add one step" />
-    <option name="LAST_COMMIT_MESSAGE" value="add one step" />
+    <MESSAGE value="add fixes models/steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fixes models/steps" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
