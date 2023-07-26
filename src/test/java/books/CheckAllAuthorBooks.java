@@ -1,19 +1,11 @@
 package books;
 
 import io.qameta.allure.Description;
-import io.restassured.http.ContentType;
-import org.checkerframework.checker.units.qual.A;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import ru.library.models.postgresql.response.AllAuthorBooksRs;
 import ru.library.steps.LibraryAuthorBooks;
-import ru.library.steps.LibraryAuthorBooks.*;
 
-import java.util.List;
-
-import static io.restassured.RestAssured.given;
 import static ru.library.steps.LibraryAuthorBooks.checkSumStep;
-
 
 public class CheckAllAuthorBooks {
     //private final static String URL = "http://localhost:8080/";

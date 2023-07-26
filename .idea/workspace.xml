@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22d102f-e060-4eab-bde0-bc536a8f11f7" name="Changes" comment="add fixes models/steps">
-      <change afterPath="$PROJECT_DIR$/src/test/java/books/CheckAllAuthorBooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/AllAuthorBooksRs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
+    <list default="true" id="c22d102f-e060-4eab-bde0-bc536a8f11f7" name="Changes" comment="add steps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/request/AllAuthorBooksRq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/request/AllAuthorBooksRq.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/AllAuthorBooksRs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/AllAuthorBooksRs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/AuthorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/AuthorDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/AuthorSaveRs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/AuthorSaveRs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/steps/LibraryAuthorBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/LibraryAuthorBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/books/CheckAllAuthorBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/books/CheckAllAuthorBooks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689946398208</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add steps">
+      <option name="closed" value="true" />
+      <created>1690379229842</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690379229842</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +256,8 @@
     <MESSAGE value="add models&#10;small fixes" />
     <MESSAGE value="add one step" />
     <MESSAGE value="add fixes models/steps" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fixes models/steps" />
+    <MESSAGE value="add steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="add steps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -275,7 +279,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/books/CheckAllAuthorBooks.java</url>
-          <line>35</line>
+          <line>27</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
