@@ -4,12 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22d102f-e060-4eab-bde0-bc536a8f11f7" name="Changes" comment="add steps">
+    <list default="true" id="c22d102f-e060-4eab-bde0-bc536a8f11f7" name="Changes" comment="add fix">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/authoridbooks/request/GetAllAuthorBooksXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/authorssave/request/PostAuthorSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/bookssave/request/AuthorDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/bookssave/request/PostBookSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/AllAuthorBooksXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/CreateNewAuthor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/CreateNewBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/utils/XMLUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AddNewAuthor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AddNewBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AllAuthorBooksPOST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AllAuthorsBooksGET.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/authorNoBooks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/createNewAuthor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/AllAuthorBooksRs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/AllAuthorBooksRs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/AuthorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/response/AuthorDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/books/CheckAllAuthorBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/books/CheckAllAuthorBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/entity/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/authoridbooks/request/GetAllAuthorBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/authoridbooks/request/GetAllAuthorBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/authoridbooks/response/AuthorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/authoridbooks/response/AuthorDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/authoridbooks/response/GetAllAuthorBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/authoridbooks/response/AllAuthorBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/authorssave/request/PostAuthorSave.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/authorssave/response/PostAuthorSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/authorssave/response/AuthorSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/bookssave/request/AuthorIdDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/bookssave/request/PostBookSave.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/bookssave/response/PostBookSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/bookssave/response/BookSave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/steps/ErrLibraryAuthorBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/ErrLibraryAuthorBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/steps/LibraryAllAuthorBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/LibraryAllAuthorBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/steps/StatusLibraryAuthorBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/StatusLibraryAuthorBooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/steps/specifications/Specifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/specifications/Specifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/utils/NumbersGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/books/CheckAllAuthorBooks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/AllAuthorBooksRs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/authorBooksRs.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +56,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="AddNewAuthor.successRequestCreateNewAuthor" />
+    </enabled-run-configurations>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -37,7 +72,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2RsUsI7XpLiE3vteXNB5lORbZrz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -55,28 +90,33 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/Users/dmerzlyakov/Desktop/IdeaProjects/aqa_final_work",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.22070312",
-    "project.structure.side.proportion": "0.2724138",
+    "project.structure.side.proportion": "0.4003623",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "XML",
+      "JSON",
+      "JAVA"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.CheckAllAuthorBooks">
-    <configuration name="AuthorsBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AddNewAuthor.failureRequestCreateNewAuthorRepeat">
+    <configuration name="AddNewAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aqa_final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="books.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="books" />
-      <option name="MAIN_CLASS_NAME" value="books.AuthorsBooks" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddNewAuthor" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea -Dstand=test" />
@@ -84,16 +124,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckAllAuthorBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddNewAuthor.failureRequestCreateNewAuthorRepeat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aqa_final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="books.AuthorsBooks" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="books" />
-      <option name="MAIN_CLASS_NAME" value="books.CheckAllAuthorBooks" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddNewAuthor" />
+      <option name="METHOD_NAME" value="failureRequestCreateNewAuthorRepeat" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea -Dstand=test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddNewAuthor.successRequestCreateNewAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aqa_final" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddNewAuthor" />
+      <option name="METHOD_NAME" value="successRequestCreateNewAuthor" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea -Dstand=test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddNewBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aqa_final" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddNewBook" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea -Dstand=test" />
@@ -101,35 +157,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckAllAuthorBooks.checkAllAuthorBooksPositive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AllAuthorsBooksGET" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aqa_final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="books.AuthorsBooks" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="books" />
-      <option name="MAIN_CLASS_NAME" value="books.CheckAllAuthorBooks" />
-      <option name="METHOD_NAME" value="checkAllAuthorBooksPositive" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea -Dstand=test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckAllAuthorBooks.simpleTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aqa_final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="books.AuthorsBooks" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="books" />
-      <option name="MAIN_CLASS_NAME" value="books.CheckAllAuthorBooks" />
-      <option name="METHOD_NAME" value="simpleTest2" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AllAuthorsBooksGET" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea -Dstand=test" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,10 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CheckAllAuthorBooks" />
-        <item itemvalue="JUnit.AuthorsBooks" />
-        <item itemvalue="JUnit.CheckAllAuthorBooks.checkAllAuthorBooksPositive" />
-        <item itemvalue="JUnit.CheckAllAuthorBooks.simpleTest2" />
+        <item itemvalue="JUnit.AddNewAuthor.failureRequestCreateNewAuthorRepeat" />
+        <item itemvalue="JUnit.AddNewAuthor.successRequestCreateNewAuthor" />
+        <item itemvalue="JUnit.AddNewAuthor" />
+        <item itemvalue="JUnit.AddNewBook" />
+        <item itemvalue="JUnit.AllAuthorsBooksGET" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +269,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690379229842</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add fix">
+      <option name="closed" value="true" />
+      <created>1690379673328</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690379673328</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add fix">
+      <option name="closed" value="true" />
+      <created>1690552547650</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690552547650</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,33 +307,8 @@
     <MESSAGE value="add one step" />
     <MESSAGE value="add fixes models/steps" />
     <MESSAGE value="add steps" />
-    <option name="LAST_COMMIT_MESSAGE" value="add steps" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/books/CheckAllAuthorBooks.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/library/steps/LibraryAuthorBooks.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/library/steps/LibraryAuthorBooks.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/books/CheckAllAuthorBooks.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="add fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,4 +1,4 @@
-package ru.library.models.postgresql.response;
+package ru.library.models.authoridbooks.response;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
