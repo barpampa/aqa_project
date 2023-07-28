@@ -21,17 +21,16 @@ errorCode	number	body	1001
 errorMessage	String	body	Не передано имя автора
 
  */
-package ru.library.models.postgresql.request;
+package ru.library.models.postgresql.endpoints.authorssave.request;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 
 @Getter
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class AuthorSaveRq {
+public class PostAuthorSave {
     private String firstName;
     private String familyName;
     private String secondName;

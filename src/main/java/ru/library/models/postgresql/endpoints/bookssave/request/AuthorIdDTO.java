@@ -1,11 +1,12 @@
-package ru.library.models.postgresql.request;
+package ru.library.models.postgresql.endpoints.bookssave.request;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.*;
+import lombok.Builder;
+import lombok.Getter;
 
 @Getter
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class AllAuthorBooksRq {
+public class AuthorIdDTO {
     private Long id;
 }
