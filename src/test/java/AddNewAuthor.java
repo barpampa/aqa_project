@@ -10,7 +10,7 @@ public class AddNewAuthor {
     @Description("Вызов метода POST /library/authors/save. Позитивный сценарий")
     public void successRequestCreateNewAuthor() {
         CreateNewAuthor createNewAuthor = new CreateNewAuthor();
-        createNewAuthor.postCreateNewAuthor("Петров","Иван","Иванович");
+        createNewAuthor.postCreateNewAuthor("Петров1","Иван","Иванович");
     }
 
     @Test
@@ -18,7 +18,7 @@ public class AddNewAuthor {
     @Description("Вызов метода POST /library/authors/save. Негативный сценарий")
     public void failureRequestCreateNewAuthorRepeat() {
         CreateNewAuthor createNewAuthor = new CreateNewAuthor();
-        createNewAuthor.postCreateNewAuthor("Петров","Иван","Иванович");
+        createNewAuthor.postCreateNewAuthor("Петров1","Иван","Иванович");
     }
 
     enum Author {

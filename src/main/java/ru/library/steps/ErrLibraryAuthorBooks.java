@@ -9,17 +9,21 @@ import static io.restassured.RestAssured.given;
 public class ErrLibraryAuthorBooks {
 
     @Step("Отправляем запрос GET /authors/id/books.Проверяем, что Status code = 409")
-    public void getRequestCheckStatusCode(String id, int status) { given().log().all()
+
+    public void getRequestCheckStatusCode(String id, int status) {
+        given().log().all()
                 .spec(Specifications.getInformationSpecification(id, "/authors/{id}/books"))
                 .get("")
                 .then().log().body()
                 .spec(Specifications.responseSpecification(status));
     }
+
     @Step("Отправляем запрос GET /authors/id/books.Проверяем body ошибки")
     public void getRequestCheckNoAuthor(String id) {
         given().log().all()
                 .spec(Specifications.getInformationSpecification(id, "/authors/{id}/books"))
-                .get("")
+                .pathParam("id", id)
+                .get("/library/authors/{id}/books")
                 .then().log().body()
                 .assertThat()
                 .body("errorCode", Matchers.is("1004"))
@@ -37,4 +41,5 @@ public class ErrLibraryAuthorBooks {
                 .body("errorMessage", Matchers.is("Некорректный обязательный параметр"));
     }
 }
+
 

@@ -37,11 +37,4 @@ public class Specifications {
                 .expectStatusCode(statusCode)
                 .build();
     }
-
-    public static ResponseSpecification responseSpec(int statusCode, Object body) {
-        return new ResponseSpecBuilder()
-                .expectContentType(ContentType.JSON)
-                .expectStatusCode(statusCode)
-                .build();
-    }
 }

@@ -3,9 +3,7 @@ package ru.library.steps;
 import io.qameta.allure.Step;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import ru.library.steps.specifications.Specifications;
-
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.port;
 
 public class LibraryAllAuthorBooks {
 

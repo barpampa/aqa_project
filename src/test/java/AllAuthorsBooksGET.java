@@ -9,14 +9,6 @@ import java.util.Random;
 
 public class AllAuthorsBooksGET {
 
-    @BeforeAll
-    public static void createAuthor() {
-    }
-
-    @BeforeAll
-    public static void createBook(){
-    }
-
     @Test
     @DisplayName("Проверяем, что на вызов метода вернулся успешный ответ: 200 ОК")
     @Description("Вызов метода GET /authors/id/books. Позитивный сценарий")
