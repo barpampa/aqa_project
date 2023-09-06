@@ -1,0 +1,31 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="authors_books">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="books">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="book">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="author">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:integer" name="id"/>
+                                                    <xs:element type="xs:string" name="first_name"/>
+                                                    <xs:element type="xs:string" name="second_name"/>
+                                                    <xs:element type="xs:string" name="family_name"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element type="xs:string" name="book_title"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

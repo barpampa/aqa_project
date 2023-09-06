@@ -1,10 +1,8 @@
 import io.qameta.allure.Description;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import ru.library.steps.ErrLibraryAuthorBooks;
-import ru.library.steps.LibraryAllAuthorBooks;
-import ru.library.steps.StatusLibraryAuthorBooks;
+import ru.library.steps.AllAuthorBooksJSON;
+
 import java.util.Random;
 
 public class AllAuthorsBooksGET {
@@ -13,24 +11,24 @@ public class AllAuthorsBooksGET {
     @DisplayName("Проверяем, что на вызов метода вернулся успешный ответ: 200 ОК")
     @Description("Вызов метода GET /authors/id/books. Позитивный сценарий")
     public void successRequestStatus() {
-        StatusLibraryAuthorBooks statusLibraryAuthorBooks = new StatusLibraryAuthorBooks();
-        statusLibraryAuthorBooks.getStatusCode("120");
+        AllAuthorBooksJSON allAuthorBooksJSON = new AllAuthorBooksJSON();
+        allAuthorBooksJSON.getStatusCode("135");
     }
 
     @Test
     @DisplayName("У автора есть книги. Проверяем валидацию ответа по JSON схеме")
     @Description("Вызов метода GET /authors/id/books. Позитивный сценарий")
     public void successRequestValidate() {
-        LibraryAllAuthorBooks libraryAllAuthorBooks = new LibraryAllAuthorBooks();
-        libraryAllAuthorBooks.getAuthorBooksWithJsonSchema("120");
+        AllAuthorBooksJSON allAuthorBooksJSON = new AllAuthorBooksJSON();
+        allAuthorBooksJSON.getAuthorBooksWithJsonSchema("135");
     }
 
     @Test
     @DisplayName("У автора нет книг. Проверяем валидацию ответа по JSON схеме")
     @Description("Вызов метода GET /authors/id/books. Позитивный сценарий")
     public void successRequestNoBooksFromAuthor() {
-        LibraryAllAuthorBooks libraryAllAuthorBooks = new LibraryAllAuthorBooks();
-        libraryAllAuthorBooks.noBooksFromAuthor("117");
+        AllAuthorBooksJSON allAuthorBooksJSON = new AllAuthorBooksJSON();
+        allAuthorBooksJSON.noBooksFromAuthor("134");
     }
 
     @Test
@@ -38,18 +36,18 @@ public class AllAuthorsBooksGET {
     @Description("Вызов метода GET /authors/id/books. Негативный сценарий")
     public void failureRequestNoAuthor() {
         Random random = new Random();
-        int status = random.nextInt(1000) + 100;
-        ErrLibraryAuthorBooks errLibraryAuthorBooks = new ErrLibraryAuthorBooks();
-        errLibraryAuthorBooks.getRequestCheckStatusCode(String.valueOf(status), 409);
-        errLibraryAuthorBooks.getRequestCheckNoAuthor(String.valueOf(status));
+        int value = random.nextInt(1000) + 100;
+        AllAuthorBooksJSON errors = new AllAuthorBooksJSON();
+        errors.getRequestCheckStatusCode(String.valueOf(value), 409);
+        errors.getRequestCheckNoAuthor(String.valueOf(value));
     }
 
     @Test
     @DisplayName("Проверяем, что передан некорректный обязательный параметр")
     @Description("Вызов метода GET /authors/id/books. Негативный сценарий")
     public void failureRequestBrokenParameter() {
-        ErrLibraryAuthorBooks errLibraryAuthorBooks = new ErrLibraryAuthorBooks();
-        errLibraryAuthorBooks.getRequestCheckStatusCode("h", 400);
-        errLibraryAuthorBooks.getRequestCheckBrokenId("h");
+        AllAuthorBooksJSON errors = new AllAuthorBooksJSON();
+        errors.getRequestCheckStatusCode("h", 400);
+        errors.getRequestCheckBrokenId("h");
     }
 }

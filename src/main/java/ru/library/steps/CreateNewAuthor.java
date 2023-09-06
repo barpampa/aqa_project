@@ -11,30 +11,43 @@ import static io.restassured.RestAssured.given;
 
 public class CreateNewAuthor {
 
-    @Step("Отправляем запрос POST /library/authors/save.Проверяем, что автор создан authorId != null")
+    @Step("Отправляем запрос POST /library/authors/save. Проверяем, что автор создан authorId != null")
     public void postCreateNewAuthor(String firstName, String familyName, String secondName) {
         PostAuthorSave postAuthorSave = new PostAuthorSave(firstName, familyName, secondName);
         AuthorSave author =
         given().log().all()
-               .spec(Specifications.postInformationSpecification(postAuthorSave))
+               .spec(Specifications.postInformationSpecificationJSON(postAuthorSave))
                .post("authors/save")
         .then().log().body()
                .assertThat()
-               .spec(Specifications.responseSpecification(201))
+               .spec(Specifications.responseSpecificationJSON(201))
                .extract().response().getBody().as(AuthorSave.class);
 
         assertThat(author.getAuthorId(), Matchers.notNullValue());
     }
 
-    @Step("Отправляем запрос POST /library/authors/save.Проверяем, что автор не создан authorId == null")
-    public void postCreateNewAuthorWithNoParameter(String firstName, String familyName, String secondName) {
+    @Step("Отправляем запрос POST /library/authors/save. Проверяем, что автор уже есть в базе данных")
+    public void postCreateNewAuthorRepeat(String firstName, String familyName, String secondName) {
         PostAuthorSave postAuthorSave = new PostAuthorSave(firstName, familyName, secondName);
                 given().log().all()
-                        .spec(Specifications.postInformationSpecification(postAuthorSave))
+                        .spec(Specifications.postInformationSpecificationJSON(postAuthorSave))
+                        .post("authors/save")
+                        .then().log().body()
+                        .assertThat()
+                        .spec(Specifications.responseSpecificationJSON(409))
+                        .body("errorCode", Matchers.is("1002"))
+                        .body("errorMessage", Matchers.is("Указанный автор уже добавлен в базу данных"));
+    }
+
+    @Step("Отправляем запрос POST /library/authors/save.Проверяем, что автора нет в базе данных")
+    public void postCreateNewAuthorNoParameter(String firstName, String familyName, String secondName) {
+        PostAuthorSave postAuthorSave = new PostAuthorSave(firstName, familyName, secondName);
+                given().log().all()
+                        .spec(Specifications.postInformationSpecificationJSON(postAuthorSave))
                         .post("authors/save")
                 .then().log().body()
                         .assertThat()
-                        .spec(Specifications.responseSpecification(400))
+                        .spec(Specifications.responseSpecificationJSON(400))
                         .body("errorDetails", Matchers.is("1001"))
                         .body("errorCode", Matchers.is("Валидация не пройдена"));
     }

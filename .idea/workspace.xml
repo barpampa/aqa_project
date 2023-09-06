@@ -4,42 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22d102f-e060-4eab-bde0-bc536a8f11f7" name="Changes" comment="add fix">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/authoridbooks/request/GetAllAuthorBooksXML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/authorssave/request/PostAuthorSave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/bookssave/request/AuthorDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/bookssave/request/PostBookSave.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/AllAuthorBooksXML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/CreateNewAuthor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/CreateNewBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/utils/XMLUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AddNewAuthor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AddNewBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AllAuthorBooksPOST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AllAuthorsBooksGET.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/authorNoBooks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/createNewAuthor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e6c54b58-afea-4d5a-8b69-b8fad102b105" name="Changes" comment="add fixtures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/entity/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/authoridbooks/request/GetAllAuthorBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/authoridbooks/request/GetAllAuthorBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/authoridbooks/response/AuthorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/authoridbooks/response/AuthorDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/authoridbooks/response/GetAllAuthorBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/authoridbooks/response/AllAuthorBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/authorssave/request/PostAuthorSave.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/authorssave/response/PostAuthorSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/authorssave/response/AuthorSave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/bookssave/request/AuthorIdDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/bookssave/request/PostBookSave.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/models/postgresql/endpoints/bookssave/response/PostBookSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/models/bookssave/response/BookSave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/steps/ErrLibraryAuthorBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/ErrLibraryAuthorBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/steps/LibraryAllAuthorBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/LibraryAllAuthorBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/steps/StatusLibraryAuthorBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/StatusLibraryAuthorBooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/steps/specifications/Specifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/specifications/Specifications.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/utils/NumbersGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/books/CheckAllAuthorBooks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/AllAuthorBooksRs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/authorBooksRs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/library/steps/fixtures/LibraryDatabaseFixtureSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/library/steps/fixtures/LibraryDatabaseFixtureSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AddNewBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddNewBook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,237 +24,153 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="JUnit" name="AddNewAuthor.successRequestCreateNewAuthor" />
-    </enabled-run-configurations>
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="vmOptionsForImporter" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
-  <component name="ProjectId" id="2RsUsI7XpLiE3vteXNB5lORbZrz" />
+  <component name="ProjectId" id="2V127MCYizExP7fTu1Tbu0epbJu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/dmerzlyakov/Desktop/IdeaProjects/aqa_final_work",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.22070312",
-    "project.structure.side.proportion": "0.4003623",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dmerzlyakov/Desktop/IdeaProjects/aqa_final_work/src/test/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4003623&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "XML",
-      "JSON",
-      "JAVA"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JAVA&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
+      <recent name="ru.library.steps" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddNewAuthor.failureRequestCreateNewAuthorRepeat">
-    <configuration name="AddNewAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aqa_final" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddNewAuthor" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea -Dstand=test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddNewAuthor.failureRequestCreateNewAuthorRepeat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aqa_final" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddNewAuthor" />
-      <option name="METHOD_NAME" value="failureRequestCreateNewAuthorRepeat" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea -Dstand=test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddNewAuthor.successRequestCreateNewAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="aqa_final" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddNewAuthor" />
-      <option name="METHOD_NAME" value="successRequestCreateNewAuthor" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea -Dstand=test" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddNewBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AddNewBook.successRequestCreateNewBookDB">
+    <configuration name="AddNewBook.successRequestCreateNewBookDB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aqa_final" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AddNewBook" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea -Dstand=test" />
+      <option name="METHOD_NAME" value="successRequestCreateNewBookDB" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllAuthorsBooksGET" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GETSMSTemplates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aqa_final" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AllAuthorsBooksGET" />
-      <option name="METHOD_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GETSMSTemplates" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea -Dstand=test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
+    <configuration name="GETSMSTemplates.successRequestTemplateSMS_148021" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="aqa_final" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea -Dstand=test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GETSMSTemplates" />
+      <option name="METHOD_NAME" value="successRequestTemplateSMS_148021" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="GETSMSTemplates.successRequestTemplateSMS_18745" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aqa_final" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GETSMSTemplates" />
+      <option name="METHOD_NAME" value="successRequestTemplateSMS_18745" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
+    <configuration name="GETSMSTemplates.successRequestTemplateSMS_18748" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="aqa_final" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GETSMSTemplates" />
+      <option name="METHOD_NAME" value="successRequestTemplateSMS_18748" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddNewAuthor.failureRequestCreateNewAuthorRepeat" />
-        <item itemvalue="JUnit.AddNewAuthor.successRequestCreateNewAuthor" />
-        <item itemvalue="JUnit.AddNewAuthor" />
-        <item itemvalue="JUnit.AddNewBook" />
-        <item itemvalue="JUnit.AllAuthorsBooksGET" />
+        <item itemvalue="JUnit.AddNewBook.successRequestCreateNewBookDB" />
+        <item itemvalue="JUnit.GETSMSTemplates.successRequestTemplateSMS_18745" />
+        <item itemvalue="JUnit.GETSMSTemplates" />
+        <item itemvalue="JUnit.GETSMSTemplates.successRequestTemplateSMS_148021" />
+        <item itemvalue="JUnit.GETSMSTemplates.successRequestTemplateSMS_18748" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c22d102f-e060-4eab-bde0-bc536a8f11f7" name="Changes" comment="" />
-      <created>1688038490755</created>
+      <changelist id="e6c54b58-afea-4d5a-8b69-b8fad102b105" name="Changes" comment="" />
+      <created>1693576639658</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1688038490755</updated>
+      <updated>1693576639658</updated>
     </task>
-    <task id="LOCAL-00001" summary="add new repo">
-      <created>1688115555316</created>
+    <task id="LOCAL-00001" summary="add fix">
+      <option name="closed" value="true" />
+      <created>1693579204663</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1688115555316</updated>
+      <updated>1693579204663</updated>
     </task>
-    <task id="LOCAL-00002" summary="add new repo">
-      <created>1688116441563</created>
+    <task id="LOCAL-00002" summary="project refactored">
+      <option name="closed" value="true" />
+      <created>1694009092985</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1688116441563</updated>
+      <updated>1694009092985</updated>
     </task>
-    <task id="LOCAL-00003" summary="pom fixed">
+    <task id="LOCAL-00003" summary="squash commits">
       <option name="closed" value="true" />
-      <created>1689062975736</created>
+      <created>1694009625437</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1689062975736</updated>
+      <updated>1694009625437</updated>
     </task>
-    <task id="LOCAL-00004" summary="add entity &#10;add hibernate.cfg.xml">
+    <task id="LOCAL-00004" summary="add hibernate">
       <option name="closed" value="true" />
-      <created>1689087832566</created>
+      <created>1694691805565</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1689087832566</updated>
+      <updated>1694691805565</updated>
     </task>
-    <task id="LOCAL-00005" summary="add models&#10;small fixes">
+    <task id="LOCAL-00005" summary="add fixtures">
       <option name="closed" value="true" />
-      <created>1689835957997</created>
+      <created>1694692047505</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1689835957997</updated>
+      <updated>1694692047505</updated>
     </task>
-    <task id="LOCAL-00006" summary="add one step">
-      <option name="closed" value="true" />
-      <created>1689862837173</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1689862837173</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add fixes models/steps">
-      <option name="closed" value="true" />
-      <created>1689946398208</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1689946398208</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add steps">
-      <option name="closed" value="true" />
-      <created>1690379229842</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1690379229842</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add fix">
-      <option name="closed" value="true" />
-      <created>1690379673328</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1690379673328</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add fix">
-      <option name="closed" value="true" />
-      <created>1690552547650</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1690552547650</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,15 +185,40 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add new repo" />
-    <MESSAGE value="pom fixed" />
-    <MESSAGE value="add entity &#10;add hibernate.cfg.xml" />
-    <MESSAGE value="add models&#10;small fixes" />
-    <MESSAGE value="add one step" />
-    <MESSAGE value="add fixes models/steps" />
-    <MESSAGE value="add steps" />
+    <MESSAGE value="add fixes" />
     <MESSAGE value="add fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fix" />
+    <MESSAGE value="project refactored" />
+    <MESSAGE value="squash commits" />
+    <MESSAGE value="add small fixes" />
+    <MESSAGE value="add hibernate" />
+    <MESSAGE value="add fixtures" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fixtures" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/library/steps/fixtures/LibraryDatabaseFixtureSteps.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/library/steps/fixtures/LibraryDatabaseFixtureSteps.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/library/steps/fixtures/LibraryDatabaseFixtureSteps.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/library/steps/fixtures/LibraryDatabaseFixtureSteps.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

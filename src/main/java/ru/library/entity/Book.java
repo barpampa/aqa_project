@@ -1,23 +1,30 @@
 package ru.library.entity;
 
-import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+import javax.persistence.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 @Table(name = "book")
 public class Book {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
-    public int id;
+    public long id;
 
     @Column(name = "book_title", length = 100)
     public String bookTitle;
 
     @Column(name = "author_id")
-    public int authorId;
+    public long authorId;
 
     @Column(name = "customer_id")
-    public int customerId;
+    public long customerId;
 
 }

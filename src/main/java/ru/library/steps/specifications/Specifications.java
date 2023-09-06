@@ -11,29 +11,44 @@ public class Specifications {
     final static String URI = "http://localhost:8080/";
     final static String BASE_PATH = "library";
 
-    public static RequestSpecBuilder commonSpecBuilder() {
+    public static RequestSpecBuilder commonSpecBuilderRq() {
         return new RequestSpecBuilder()
                 .setBaseUri(URI)
-                .setBasePath(BASE_PATH)
-                .setContentType(ContentType.JSON);
+                .setBasePath(BASE_PATH);
     }
 
     public static RequestSpecification getInformationSpecification(String id, String path) {
-        return commonSpecBuilder()
+        return commonSpecBuilderRq()
                 .setBasePath(BASE_PATH + path)
+                .setContentType(ContentType.JSON)
                 .addPathParam("id", id)
                 .build();
     }
 
-    public static RequestSpecification postInformationSpecification(Object body) {
-        return commonSpecBuilder()
+    public static RequestSpecification postInformationSpecificationJSON(Object body) {
+        return commonSpecBuilderRq()
                 .setBody(body)
+                .setContentType(ContentType.JSON)
                 .build();
     }
 
-    public static ResponseSpecification responseSpecification(int statusCode) {
+    public static RequestSpecification postInformationSpecificationXML(Object body) {
+        return commonSpecBuilderRq()
+                .setBody(body)
+                .setContentType(ContentType.XML)
+                .build();
+    }
+
+    public static ResponseSpecification responseSpecificationJSON(int statusCode) {
         return new ResponseSpecBuilder()
                 .expectContentType(ContentType.JSON)
+                .expectStatusCode(statusCode)
+                .build();
+    }
+
+    public static ResponseSpecification responseSpecificationXML(int statusCode) {
+        return new ResponseSpecBuilder()
+                .expectContentType(ContentType.XML)
                 .expectStatusCode(statusCode)
                 .build();
     }

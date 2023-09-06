@@ -6,10 +6,20 @@ import ru.library.steps.AllAuthorBooksXML;
 public class AllAuthorBooksPOST {
 
     @Test
-    @DisplayName("1")
-    @Description("Вызов метода . Позитивный сценарий")
-    public void successRequestAllAuthorBooksXML() {
+    @DisplayName("У автора есть книги. Проверяем валидацию ответа по XSD схеме")
+    @Description("Вызов метода POST /library/authors/books. Позитивный сценарий")
+    public void successRequestAllAuthorBooksXML() throws Exception {
         AllAuthorBooksXML allAuthorBooksXML = new AllAuthorBooksXML();
-        allAuthorBooksXML.requestAllAuthorBooksXML(120L);
+        allAuthorBooksXML.requestAllAuthorBooksXML(135L);
     }
+
+    @Test
+    @DisplayName("У автора нет книг. Проверяем валидацию ответа по XSD схеме")
+    @Description("Вызов метода POST /library/authors/books. Позитивный сценарий")
+    public void successRequestAllAuthorWithoutBooksXML() throws Exception {
+        AllAuthorBooksXML allAuthorBooksXML = new AllAuthorBooksXML();
+        allAuthorBooksXML.requestAllAuthorWithoutBooksXML(134L);
+    }
+
+
 }

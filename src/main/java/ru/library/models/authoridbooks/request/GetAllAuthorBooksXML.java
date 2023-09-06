@@ -1,14 +1,16 @@
 package ru.library.models.authoridbooks.request;
 
-import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import javax.xml.bind.annotation.*;
 
-@AllArgsConstructor
+@Getter
+@NoArgsConstructor
 @XmlRootElement(name = "author")
+@XmlType(name = "author")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class GetAllAuthorBooksXML {
 
-    @XmlElement(name = "author_id", required = true)
     private Long author_id;
 
     public void setAuthor_id(Long author_id) {
