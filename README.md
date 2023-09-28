@@ -1,4 +1,4 @@
-# Проект Сервиса библиотеки
+# Проект тестирования сервиса библиотеки
 
 ### Описание проекта
 
@@ -30,13 +30,6 @@
 - Перейдите в файл Library Application. Запустите приложение.
   Убедитесь, что приложение успешно запустилось:
   В консоли нет ошибок. Появилась запись: StartupInfoLogger: Started LibraryApplication.
-
-### Используемые технологии
-
-- Maven
-- Spring
-- MySql
-- JUnit
 
 ### Описание работы с проектом
 
@@ -83,17 +76,6 @@ Content-Type: application/xml
 </author>
 ```
 
-### Требования к практической работе
-
-Необходимо протестировать методы:
-
-- POST http://localhost:8080/library/authors/save
-- POST http://localhost:8080/library/books/save
-- GET http://localhost:8080/library/authors/{id}/books
-  с использованием Hibernate, Rest-assured, JUnit, Lombok
-
-Архитектура указанных методов описана в src/main/resources/LibraryService.png
-
 ## Автор проекта
 
-Кряжова Светлана Юрьевна
+Мерзляков Дмитрий Евгеньевич
