@@ -28,7 +28,7 @@ public class AddNewAuthor {
         createNewAuthor.postCreateNewAuthorRepeat("Петров0123","Иван123","Иванович");
     }
 
-    enum Author {
+    enum Author { //вспомнить enum
         Anna, Smith, Maria
     }
 
